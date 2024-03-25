@@ -10,12 +10,12 @@ public class Consumer {
     @Id
     @SequenceGenerator(
             name = "consumer_sequence",
-            sequenceName =  "student_sequence",
+            sequenceName =  "consumer_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "student_sequence"
+            generator = "consumer_sequence"
     )
     private long id;
     @Column(name = "name")
